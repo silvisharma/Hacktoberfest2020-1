@@ -1,20 +1,10 @@
 # This python code can be used to solve the quadratic equations, when the values of a, b, c are given as inputs. 
 
 
-import cmath;
-
-print("Enter 'x' for exit.");
-n1 = input("Enter value of a: ");
-
-if n1 == 'x':
-    exit();
-else:
-    n2 = input("Enter value of b: ");
-    n3 = input("Enter value of c: ");
-    num1 = float(n1);
-    num2 = float(n2);
-    num3 = float(n3);
-    d = (num2**2) - (4*num1*num3);
-    q1 = (-num2-cmath.sqrt(d))/(2*num1);
-    q2 = (-num2+cmath.sqrt(d))/(2*num1);
-    print("The solutions = {0} and {1}" .format(q1,q2));
+import cmath
+a=float(input("Enter the value  of a:"))
+b=float(input("Enter the value  of b:"))
+c=float(input("Enter the value  of c:"))
+p=(-b+cmath.sqrt(b**2-4*a*c))/(2*a)
+q=(-b-cmath.sqrt(b**2-4*a*c))/(2*a)
+print('The solution are {0} and {1}'.format(p,q))
